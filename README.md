@@ -1,8 +1,8 @@
 # 💬 Smart Comment Box
 
-![Preview do projeto](assets/demonstracao-1.png)
-![Preview do projeto](assets/demonstracao-2.png)
-![Preview do projeto](assets/demonstracao-3.png)
+![Preview do projeto](./assets/demonstracao-1.png)
+![Preview do projeto](./assets/demonstracao-2.png)
+![Preview do projeto](./assets/demonstracao-3.png)
 
 Um campo de comentários interativo desenvolvido com JavaScript puro, focado em validação em tempo real, controle de caracteres e feedback visual ao usuário.
 
