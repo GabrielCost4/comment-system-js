@@ -1,0 +1,113 @@
+/* Reset Básico que conversamos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Área de Input */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    resize: none;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Linha de Feedback */
+.feedback-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+#contador { color: #666; }
+#message-alert { font-weight: 500; }
+
+/* Estados de Alerta */
+.alert-yellow { color: #ffa500 !important; border-color: #ffa500 !important; }
+.alert-red { color: #ff4d4d !important; border-color: #ff4d4d !important; }
+
+/* Botão */
+#btnPublicar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, opacity 0.3s;
+}
+
+#btnPublicar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilização do Comentário Criado */
+.campoDosComentarios {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left: 5px solid #007bff;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.campoDosComentarios p {
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.campoDosComentarios span {
+    font-size: 0.75rem;
+    color: #888;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
